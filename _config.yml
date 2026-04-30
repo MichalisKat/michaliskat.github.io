@@ -28,6 +28,10 @@ exclude:
   - node_modules
   - vendor
 
+# Footer
+minima:
+  skin: classic
+
 # Plugins
 plugins:
   - jekyll-feed
