@@ -28,6 +28,10 @@ exclude:
   - vendor
   - _site
 
+# Μενού πλοήγησης (μόνο Σχετικά)
+header_pages:
+  - about.md
+
 # Plugins
 plugins:
   - jekyll-feed

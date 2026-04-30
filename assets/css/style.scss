@@ -104,3 +104,119 @@ blockquote p { margin: 0; }
 }
 
 .post-content h3 { color: #185FA5; }
+
+/* =============================================
+   Sidebar layout
+   ============================================= */
+.page-layout {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.page-main  { min-width: 0; }
+.page-sidebar { position: sticky; top: 1.5rem; }
+
+/* Widget card */
+.sidebar-widget {
+  background: #fff;
+  border: 1px solid #dce8f5;
+  border-radius: 10px;
+  padding: 1.2rem 1.1rem;
+}
+
+/* App promo widget */
+.app-promo__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.75rem;
+}
+
+.app-promo__icon {
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.app-promo__title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.app-promo__title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #0C447C;
+  line-height: 1.2;
+}
+
+.app-promo__badge {
+  font-size: 0.7rem;
+  color: #fff;
+  background: #185FA5;
+  border-radius: 20px;
+  padding: 1px 7px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.app-promo__desc {
+  font-size: 0.82rem;
+  color: #444;
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+}
+
+.app-promo__features {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  font-size: 0.8rem;
+  color: #333;
+
+  li {
+    padding: 2px 0;
+  }
+}
+
+.app-promo__btn {
+  display: block;
+  text-align: center;
+  background: #185FA5;
+  color: #fff !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.55rem 0.75rem;
+  border-radius: 7px;
+  text-decoration: none !important;
+  margin-bottom: 0.6rem;
+  transition: background 0.15s;
+
+  &:hover { background: #0C447C; opacity: 1; }
+  &:visited { color: #fff !important; }
+}
+
+.app-promo__gh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: #555 !important;
+  text-decoration: none;
+
+  &:hover { color: #185FA5 !important; }
+}
+
+/* Responsive: sidebar κάτω σε mobile */
+@media screen and (max-width: 768px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .page-sidebar {
+    position: static;
+  }
+}
