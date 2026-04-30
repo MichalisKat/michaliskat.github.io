@@ -9,13 +9,15 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="page-layout">
+        <div class="page-layout{% unless page.sidebar != false %} page-layout--full{% endunless %}">
           <div class="page-main">
             {{ content }}
           </div>
+          {%- if page.sidebar != false -%}
           <aside class="page-sidebar">
             {%- include sidebar.html -%}
           </aside>
+          {%- endif -%}
         </div>
       </div>
     </main>

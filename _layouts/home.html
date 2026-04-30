@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <div class="posts-grid" aria-live="polite">
+      {%- assign date_format = site.minima.date_format | default: "%d %b %Y" -%}
+      {%- for post in site.posts -%}
+        <article class="post-card">
+          {%- if post.thumbnail -%}
+            <a href="{{ post.url | relative_url }}" class="post-card__thumb" tabindex="-1" aria-hidden="true">
+              <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
+            </a>
+          {%- endif -%}
+          <div class="post-card__body">
+            <time class="post-card__date" datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: date_format }}
+            </time>
+            <h2 class="post-card__title">
+              <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h2>
+            {%- if post.excerpt -%}
+              <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+            {%- endif -%}
+            <a class="post-card__read-more" href="{{ post.url | relative_url }}">Διάβασε περισσότερα →</a>
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</div>

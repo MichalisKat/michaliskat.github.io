@@ -105,6 +105,107 @@ blockquote p { margin: 0; }
 
 .post-content h3 { color: #185FA5; }
 
+.rss-subscribe { display: none; }
+
+/* =============================================
+   Post grid cards (αρχική σελίδα)
+   ============================================= */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .posts-grid { grid-template-columns: 1fr; }
+}
+
+.post-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .18s, box-shadow .18s, border-color .18s;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,.1);
+    border-color: #185FA5;
+  }
+}
+
+.post-card__thumb {
+  display: block;
+  line-height: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0;
+  }
+}
+
+.post-card__body {
+  padding: 1.2rem 1.4rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.post-card__date {
+  font-size: .75rem;
+  color: #888;
+  font-family: monospace;
+  margin-bottom: .5rem;
+  display: block;
+}
+
+.post-card__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -.3px;
+  margin-bottom: .5rem;
+  line-height: 1.35;
+
+  a {
+    color: #111;
+    text-decoration: none;
+    &:hover { color: #185FA5; }
+    &:visited { color: #111; }
+  }
+}
+
+.post-card__excerpt {
+  font-size: .88rem;
+  color: #555;
+  line-height: 1.55;
+  flex: 1;
+  margin-bottom: .8rem;
+}
+
+.post-card__read-more {
+  font-size: .8rem;
+  font-family: monospace;
+  color: #185FA5;
+  font-weight: 600;
+  text-decoration: underline;
+  align-self: flex-start;
+
+  &:visited { color: #185FA5; }
+}
+
+/* Wrapper width — ταιριάζει με το παλιό site (1024px) */
+.wrapper {
+  max-width: 1024px !important;
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+}
+
 /* =============================================
    Sidebar layout
    ============================================= */
@@ -113,6 +214,10 @@ blockquote p { margin: 0; }
   grid-template-columns: 1fr 260px;
   gap: 2rem;
   align-items: start;
+}
+
+.page-layout--full {
+  grid-template-columns: 1fr;
 }
 
 .page-main  { min-width: 0; }

@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Τροποποίηση ωρών διάθεσης εκπαιδευτικού στο myschool"
+date: 2026-03-15
+excerpt: "Πώς τροποποιούμε σωστά τις ώρες διάθεσης διατηρώντας το ιστορικό τοποθετήσεων; Η σωστή διαδικασία βήμα-βήμα."
+thumbnail: /assets/images/thumbs/2026-03-15-tropopoiisi-wron-diasthesis.svg
+---
+
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:10px;margin-bottom:1.5rem"><rect width="400" height="200" fill="#eff6ff"/><rect x="20" y="30" width="160" height="80" rx="7" fill="white" stroke="#93c5fd" stroke-width="2"/><rect x="20" y="30" width="160" height="22" rx="7" fill="#93c5fd"/><rect x="20" y="44" width="160" height="8" rx="0" fill="#93c5fd"/><text x="100" y="47" font-family="Arial" font-size="9" fill="#1e3a8a" text-anchor="middle" font-weight="bold">Παλιά διάθεση</text><text x="30" y="70" font-family="Arial" font-size="8" fill="#64748b">Από: 11/10/2021</text><text x="30" y="84" font-family="Arial" font-size="8" fill="#64748b">Έως: 20/1/2022</text><text x="30" y="98" font-family="Arial" font-size="8" fill="#64748b">Αρ. πράξης: 14</text><rect x="20" y="118" width="160" height="16" rx="4" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/><text x="100" y="130" font-family="Arial" font-size="8" fill="#dc2626" text-anchor="middle">Τερματισμός 20/1/2022</text><line x1="200" y1="90" x2="230" y2="90" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="5,3"/><polygon points="228,85 238,90 228,95" fill="#3b82f6"/><rect x="240" y="30" width="145" height="80" rx="7" fill="white" stroke="#6ee7b7" stroke-width="2.5"/><rect x="240" y="30" width="145" height="22" rx="7" fill="#6ee7b7"/><rect x="240" y="44" width="145" height="8" rx="0" fill="#6ee7b7"/><text x="313" y="47" font-family="Arial" font-size="9" fill="#064e3b" text-anchor="middle" font-weight="bold">Νέα διάθεση</text><text x="250" y="70" font-family="Arial" font-size="8" fill="#64748b">Από: 21/1/2022</text><text x="250" y="84" font-family="Arial" font-size="8" fill="#64748b">Έως: 30/6/2022</text><text x="250" y="98" font-family="Arial" font-size="8" fill="#64748b">Αρ.: 14/11-10-2021</text><rect x="240" y="118" width="145" height="16" rx="4" fill="#d1fae5" stroke="#6ee7b7" stroke-width="1"/><text x="313" y="130" font-family="Arial" font-size="8" fill="#065f46" text-anchor="middle">Ενεργή από 21/1/2022</text><text x="200" y="175" font-family="Arial" font-size="8" fill="#94a3b8" text-anchor="middle">Ενιαίος αριθμός πράξης = αρ. + ημ. ανάληψης</text></svg>
+
+Η τροποποίηση ωρών διάθεσης εκπαιδευτικού είναι μια συνηθισμένη ανάγκη — για παράδειγμα όταν επιστρέφει εκπαιδευτικός από μακροχρόνια άδεια και χρειάζεται να μειωθούν οι ώρες του αντικαταστάτη του, ή όταν μεταβληθεί το υποχρεωτικό ωράριο, ή αν αλλάξουν οι ώρες διάθεσης εκπαιδευτικού που συμπληρώνει σε περισσότερα από ένα σχολεία.
+
+### Γιατί να μην «διορθώσουμε» απλά τις ώρες;
+
+Αν απλά επεξεργαστούμε την υπάρχουσα εγγραφή και αλλάξουμε τις ώρες, χάνεται η **ιστορία τοποθετήσεων** του εκπαιδευτικού.
+
+### Η σωστή διαδικασία
+
+Αντί να διορθώσουμε την υπάρχουσα εγγραφή, **τερματίζουμε** την παλιά διάθεση θέτοντας ημερομηνία «Έως» την τελευταία ημέρα ισχύος. Στη συνέχεια **δημιουργούμε νέα εγγραφή** με τις νέες ώρες από την επόμενη ημέρα.
+
+```
+Παράδειγμα:
+Παλιά: 16 ώρες Δημοτικό + 5 ώρες Νηπιαγωγείο  → Έως 20/1/2022
+Νέα:   19 ώρες Δημοτικό + 2 ώρες Νηπιαγωγείο  → Από 21/1/2022
+```
+
+### Το θέμα με τις αναθέσεις μαθημάτων
+
+Οι αναθέσεις μαθημάτων **δεν μεταφέρονται αυτόματα** — πρέπει να καταχωρηθούν εκ νέου. Η ημερομηνία πράξης ανάληψης πρέπει να είναι **ίση ή μεταγενέστερη** της έναρξης της νέας τοποθέτησης.
+
+### Πώς χρησιμοποιούμε την αρχική πράξη ανάληψης;
+
+Συνδυάζουμε τον αριθμό και την ημερομηνία της αρχικής πράξης ανάληψης και τα καταχωρούμε ως **ενιαίο αριθμό πράξης** στη νέα εγγραφή.
+
+```
+Αρ. πράξης παλιάς + ημερομηνία → ενιαία στη νέα εγγραφή
+Ημ. ανάληψης = ημερομηνία έναρξης νέας τοποθέτησης
+```
