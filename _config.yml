@@ -12,8 +12,7 @@ minima:
   skin: classic
 
 # Συγγραφέας
-author:
-  name: Michalis Katsirntakis
+author: Michalis Katsirntakis
 
 # Build settings
 markdown: kramdown
@@ -27,10 +26,7 @@ exclude:
   - README.md
   - node_modules
   - vendor
-
-# Footer
-minima:
-  skin: classic
+  - _site
 
 # Plugins
 plugins:

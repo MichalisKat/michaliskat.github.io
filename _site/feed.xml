@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="el"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="el" /><updated>2026-04-30T15:03:15+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MySchool Tips</title><subtitle>Πρακτικές οδηγίες και tips για το myschool — το σύστημα διαχείρισης εκπαιδευτικών της Ελλάδας.</subtitle><author><name>Michalis Katsirntakis</name></author><entry><title type="html">Βαθμολογίες Τριμήνου: Οδηγός καταχώρησης</title><link href="http://localhost:4000/2026/04/30/vathmolosies-trimino/" rel="alternate" type="text/html" title="Βαθμολογίες Τριμήνου: Οδηγός καταχώρησης" /><published>2026-04-30T00:00:00+03:00</published><updated>2026-04-30T00:00:00+03:00</updated><id>http://localhost:4000/2026/04/30/vathmolosies-trimino</id><content type="html" xml:base="http://localhost:4000/2026/04/30/vathmolosies-trimino/"><![CDATA[<p>Στο τέλος κάθε τριμήνου χρειάζεται να καταχωρήσεις τις βαθμολογίες στο myschool. Ακολούθησε τα παρακάτω βήματα για να αποφύγεις τα πιο συχνά λάθη.</p>
+
+<h2 id="βήματα-καταχώρησης-βαθμολογιών">Βήματα καταχώρησης βαθμολογιών</h2>
+
+<ol>
+  <li>Σύνδεση στο myschool</li>
+  <li>Επίλεξε <strong>Βαθμολογίες → Καταχώρηση</strong></li>
+  <li>Επίλεξε <strong>Τάξη</strong>, <strong>Τμήμα</strong> και <strong>Μάθημα</strong></li>
+  <li>Συμπλήρωσε τους βαθμούς για κάθε μαθητή</li>
+  <li>Πάτα <strong>Αποθήκευση</strong></li>
+</ol>
+
+<h2 id="τι-ελέγχεις-πριν-οριστικοποιήσεις">Τι ελέγχεις πριν οριστικοποιήσεις</h2>
+
+<ul>
+  <li>Ότι έχεις βαθμολογήσει <strong>όλους</strong> τους μαθητές</li>
+  <li>Ότι δεν υπάρχουν κενά πεδία</li>
+  <li>Ότι οι βαθμοί είναι στο σωστό εύρος (1–20)</li>
+</ul>
+
+<h2 id="tip-εκτύπωση-βαθμολογίων">Tip: Εκτύπωση βαθμολογίων</h2>
+
+<p>Μετά την αποθήκευση, μπορείς να εκτυπώσεις τα βαθμολόγια από <strong>Βαθμολογίες → Εκτυπώσεις</strong>. Κράτα αντίγραφα για το αρχείο του σχολείου.</p>
+
+<h2 id="προσοχή-προθεσμίες">Προσοχή: Προθεσμίες</h2>
+
+<p>Τήρησε τις προθεσμίες που ορίζει η Διεύθυνση — μετά το κλείδωμα της περιόδου <strong>δεν</strong> είναι δυνατή η τροποποίηση χωρίς ειδική διαδικασία.</p>]]></content><author><name>Michalis Katsirntakis</name></author><category term="βαθμολογίες" /><summary type="html"><![CDATA[Στο τέλος κάθε τριμήνου χρειάζεται να καταχωρήσεις τις βαθμολογίες στο myschool. Ακολούθησε τα παρακάτω βήματα για να αποφύγεις τα πιο συχνά λάθη.]]></summary></entry><entry><title type="html">Εισαγωγή στο myschool: Τι είναι και πώς ξεκινάς</title><link href="http://localhost:4000/2026/04/30/eisagogi-sto-myschool/" rel="alternate" type="text/html" title="Εισαγωγή στο myschool: Τι είναι και πώς ξεκινάς" /><published>2026-04-30T00:00:00+03:00</published><updated>2026-04-30T00:00:00+03:00</updated><id>http://localhost:4000/2026/04/30/eisagogi-sto-myschool</id><content type="html" xml:base="http://localhost:4000/2026/04/30/eisagogi-sto-myschool/"><![CDATA[<p>Το <strong>myschool</strong> είναι η ψηφιακή πλατφόρμα του Υπουργείου Παιδείας για τη διαχείριση όλων των σχολικών δεδομένων. Μέσα από αυτό μπορείς να καταχωρείς βαθμολογίες, απουσίες, ανακοινώσεις και πολλά άλλα.</p>
+
+<h2 id="πώς-μπαίνεις-στο-σύστημα">Πώς μπαίνεις στο σύστημα</h2>
+
+<ol>
+  <li>Πήγαινε στο <a href="https://myschool.sch.gr/">myschool.sch.gr</a></li>
+  <li>Χρησιμοποίησε τους κωδικούς <strong>Πανελλήνιου Σχολικού Δικτύου (ΠΣΔ)</strong></li>
+  <li>Αν δεν έχεις κωδικούς, επικοινώνησε με τον Διευθυντή ή τον υπεύθυνο πληροφορικής του σχολείου</li>
+</ol>
+
+<h2 id="βασικές-ενότητες">Βασικές ενότητες</h2>
+
+<ul>
+  <li><strong>Τμήματα</strong>: Διαχείριση τάξεων και μαθητών</li>
+  <li><strong>Βαθμολογίες</strong>: Καταχώρηση και εκτύπωση</li>
+  <li><strong>Απουσίες</strong>: Ημερήσια καταγραφή</li>
+  <li><strong>Ανακοινώσεις</strong>: Επικοινωνία με γονείς</li>
+</ul>
+
+<h2 id="tip-1">Tip #1</h2>
+
+<blockquote>
+  <p>Βεβαιώσου ότι χρησιμοποιείς <strong>Google Chrome ή Firefox</strong> για καλύτερη συμβατότητα με το myschool. Παλιότερες εκδόσεις του Internet Explorer έχουν προβλήματα.</p>
+</blockquote>]]></content><author><name>Michalis Katsirntakis</name></author><category term="οδηγίες" /><summary type="html"><![CDATA[Το myschool είναι η ψηφιακή πλατφόρμα του Υπουργείου Παιδείας για τη διαχείριση όλων των σχολικών δεδομένων. Μέσα από αυτό μπορείς να καταχωρείς βαθμολογίες, απουσίες, ανακοινώσεις και πολλά άλλα.]]></summary></entry><entry><title type="html">Καταχώρηση Απουσιών στο myschool: Βήμα-βήμα</title><link href="http://localhost:4000/2026/04/30/kataxorisi-apousiwn/" rel="alternate" type="text/html" title="Καταχώρηση Απουσιών στο myschool: Βήμα-βήμα" /><published>2026-04-30T00:00:00+03:00</published><updated>2026-04-30T00:00:00+03:00</updated><id>http://localhost:4000/2026/04/30/kataxorisi-apousiwn</id><content type="html" xml:base="http://localhost:4000/2026/04/30/kataxorisi-apousiwn/"><![CDATA[<p>Η καταχώρηση απουσιών είναι μια από τις πιο συχνές καθημερινές εργασίες στο myschool. Δες πώς γίνεται γρήγορα και σωστά.</p>
+
+<h2 id="βήματα-καταχώρησης">Βήματα καταχώρησης</h2>
+
+<ol>
+  <li>Σύνδεση στο myschool</li>
+  <li>Επίλεξε <strong>Απουσίες → Καταχώρηση Απουσιών</strong></li>
+  <li>Επίλεξε <strong>Τμήμα</strong> και <strong>Ημερομηνία</strong></li>
+  <li>Επίλεξε τους απόντες μαθητές</li>
+  <li>Πάτα <strong>Αποθήκευση</strong></li>
+</ol>
+
+<h2 id="σημαντικό-διόρθωση-απουσιών">Σημαντικό: Διόρθωση απουσιών</h2>
+
+<p>Αν κάνεις λάθος, μπορείς να διορθώσεις απουσίες μόνο <strong>εντός της ίδιας ημέρας</strong>. Μετά από αυτό χρειάζεται παρέμβαση από τον Διευθυντή ή τον υπεύθυνο.</p>
+
+<h2 id="tip-μαζική-καταχώρηση">Tip: Μαζική καταχώρηση</h2>
+
+<p>Αν ένα ολόκληρο τμήμα λείπει (π.χ. εκδρομή), μπορείς να χρησιμοποιήσεις την επιλογή <strong>«Επιλογή όλων»</strong> για να εξοικονομήσεις χρόνο.</p>
+
+<h2 id="συχνό-λάθος">Συχνό λάθος</h2>
+
+<p>Μην ξεχνάς να πατάς <strong>Αποθήκευση</strong> μετά από κάθε αλλαγή — το σύστημα δεν αποθηκεύει αυτόματα!</p>]]></content><author><name>Michalis Katsirntakis</name></author><category term="οδηγίες" /><summary type="html"><![CDATA[Η καταχώρηση απουσιών είναι μια από τις πιο συχνές καθημερινές εργασίες στο myschool. Δες πώς γίνεται γρήγορα και σωστά.]]></summary></entry></feed>
