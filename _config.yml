@@ -1,0 +1,34 @@
+title: MySchool Tips
+description: >-
+  Πρακτικές οδηγίες και tips για το myschool —
+  το σύστημα διαχείρισης εκπαιδευτικών της Ελλάδας.
+baseurl: ""
+url: "https://michaliskat.github.io"
+lang: el
+
+# Θέμα
+theme: minima
+minima:
+  skin: classic
+
+# Συγγραφέας
+author:
+  name: Michalis Katsirntakis
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Εξαιρέσεις από το build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
