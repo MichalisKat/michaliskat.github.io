@@ -4,7 +4,7 @@ layout: default
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <a class="post-back" href="{{ '/' | relative_url }}">← Επιστροφή</a>
+    <a class="post-back" href="{{ '/' | relative_url }}">&#8592; &#917;&#960;&#953;&#963;&#964;&#961;&#959;&#966;&#942;</a>
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
@@ -12,12 +12,22 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
-        · <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        &middot; <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
           </span>
       {%- endif -%}
-      · <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmichaliskat.github.io{{ page.url | uri_escape }}&count_bg=%23185FA5&title_bg=%23888888&title=views&edge_flat=true" alt="views" style="height:18px;vertical-align:middle;border-radius:3px">
+      &middot; <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmichaliskat.github.io{{ page.url | uri_escape }}&amp;count_bg=%23185FA5&amp;title_bg=%23888888&amp;title=views&amp;edge_flat=true" alt="views" style="height:18px;vertical-align:middle;border-radius:3px">
     </p>
   </header>
 
-  <div class="post-content e-content" ite
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <div class="post-back-footer">
+    <a class="post-back" href="{{ '/' | relative_url }}">&#8592; &#917;&#960;&#953;&#963;&#964;&#961;&#959;&#966;&#942; &#963;&#964;&#951;&#957; &#945;&#961;&#967;&#953;&#954;&#942;</a>
+  </div>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
+</article>
