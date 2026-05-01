@@ -16,7 +16,8 @@ layout: default
             <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
           </span>
       {%- endif -%}
-      &middot; <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmichaliskat.github.io{{ page.url | uri_escape }}&amp;count_bg=%23185FA5&amp;title_bg=%23888888&amp;title=views&amp;edge_flat=true" alt="views" style="height:18px;vertical-align:middle;border-radius:3px">
+      {%- assign full_url = "https://michaliskat.github.io" | append: page.url | url_encode -%}
+      &middot; <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url={{ full_url }}&amp;count_bg=%23185FA5&amp;title_bg=%23888888&amp;title=views&amp;edge_flat=true" alt="views" style="height:18px;vertical-align:middle;border-radius:3px">
     </p>
   </header>
 
