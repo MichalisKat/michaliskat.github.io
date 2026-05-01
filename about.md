@@ -7,6 +7,7 @@ sidebar: false
 
 <style>
 .post-title { display: none; }
+.post-content > p { text-align: center; }
 .post-content hr { width: 120px; margin: 1.2rem auto; border: none; border-top: 2px solid #dce8f5; }
 
 /* Formspree sidebar form */
