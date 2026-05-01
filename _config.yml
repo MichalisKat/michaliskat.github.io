@@ -13,6 +13,11 @@ minima:
 # Συγγραφέας
 author: Michalis Katsirntakis
 
+# Open Graph
+logo: /assets/images/og-image.png
+social:
+  name: Michalis Katsirntakis
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
@@ -28,10 +33,3 @@ exclude:
   - _site
 
 # Μενού πλοήγησης (μόνο Σχετικά)
-header_pages:
-  - about.md
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
