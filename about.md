@@ -9,29 +9,76 @@ sidebar: false
 .post-title { display: none; }
 .post-content { text-align: center; }
 .post-content hr { width: 120px; margin: 1.2rem auto; border: none; border-top: 2px solid #dce8f5; }
-.contact-form input,
-.contact-form textarea {
+
+/* Formspree form - scoped variables */
+.fs-form {
+  --color-border-active: #185FA5;
+  --color-border-default: #dce8f5;
+  --color-primary: #185FA5;
+  --color-primary-active: #0C447C;
+  --color-highlight: #E6F1FB;
+  --color-text-default: #262626;
+  --color-text-muted: #888;
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: left;
+  display: grid;
+  row-gap: 1.2rem;
+}
+.fs-field { display: flex; flex-direction: column; row-gap: 0.4rem; }
+.fs-label { color: var(--color-text-default); display: block; font-size: 0.9rem; font-weight: 600; line-height: 1.25rem; }
+.fs-description { color: var(--color-text-muted); display: block; font-size: 0.8rem; line-height: 1.25rem; }
+.fs-button-group { display: flex; flex-direction: row-reverse; }
+.fs-button {
+  background-color: var(--color-primary);
+  border-radius: 9999px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.6rem 2rem;
+  border: none;
+  transition: background-color 200ms;
+}
+.fs-button:hover { background-color: var(--color-primary-active); }
+.fs-button:focus-visible { background-color: var(--color-primary-active); outline: 4px solid var(--color-highlight); }
+.fs-input {
+  appearance: none;
+  border-radius: 9999px;
+  box-shadow: var(--color-border-default) 0 0 0 1px inset;
+  color: var(--color-text-default);
+  font-size: 0.95rem;
+  height: 2.8rem;
+  line-height: 1.5rem;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: none;
   width: 100%;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #dce8f5;
-  border-radius: 7px;
-  font-size: 0.9rem;
   box-sizing: border-box;
   font-family: inherit;
 }
-.contact-form textarea { resize: vertical; }
-.contact-form button {
-  width: 100%;
-  background: #185FA5;
-  color: white;
+.fs-input:focus-visible { box-shadow: var(--color-border-active) 0 0 0 1.5px inset; }
+.fs-input::placeholder { color: var(--color-text-muted); }
+.fs-textarea {
+  appearance: none;
+  border-radius: 0.75rem;
+  box-shadow: var(--color-border-default) 0 0 0 1px inset;
+  color: var(--color-text-default);
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  outline: none;
+  padding: 0.5rem 0.75rem;
+  resize: vertical;
+  min-height: 110px;
   border: none;
-  border-radius: 7px;
-  padding: 0.55rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
 }
-.contact-form button:hover { background: #0C447C; }
+.fs-textarea:focus-visible { box-shadow: var(--color-border-active) 0 0 0 1.5px inset; }
+.fs-textarea::placeholder { color: var(--color-text-muted); }
 </style>
 
 Πρακτικά tips και οδηγίες για το <a href="https://myschool.sch.gr/">myschool</a>.
@@ -51,17 +98,25 @@ sidebar: false
 
 ---
 
-<div style="max-width:420px;margin:1.5rem auto 2rem;text-align:left">
-  <form class="contact-form" action="https://formspree.io/f/xqenapae" method="POST">
-    <div style="margin-bottom:0.7rem">
-      <input type="email" name="email" placeholder="Το email σας" required>
-    </div>
-    <div style="margin-bottom:0.7rem">
-      <textarea name="message" placeholder="Το μήνυμά σας" required rows="4"></textarea>
-    </div>
-    <button type="submit">Αποστολή</button>
-  </form>
-</div>
+<form action="https://formspree.io/f/xqenapae" class="fs-form" target="_top" method="POST">
+  <div class="fs-field">
+    <label class="fs-label" for="name">Όνομα</label>
+    <input class="fs-input" id="name" name="name" required />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="email">Email</label>
+    <input class="fs-input" id="email" name="email" type="email" required />
+    <p class="fs-description">Θα χρησιμοποιηθεί για την απάντησή μου.</p>
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="message">Μήνυμα</label>
+    <textarea class="fs-textarea" id="message" name="message" required></textarea>
+    <p class="fs-description">Τι θα θέλατε να συζητήσουμε;</p>
+  </div>
+  <div class="fs-button-group">
+    <button class="fs-button" type="submit">Αποστολή</button>
+  </div>
+</form>
 
 ---
 
