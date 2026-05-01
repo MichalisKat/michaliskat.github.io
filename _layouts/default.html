@@ -13,18 +13,11 @@
           <div class="page-main">
             {{ content }}
           </div>
-          {%- if page.sidebar != false -%}
+          {%- if page.sidebar == "contact" -%}
+          <aside class="page-sidebar">
+            {%- include sidebar-contact.html -%}
+          </aside>
+          {%- elsif page.sidebar != false -%}
           <aside class="page-sidebar">
             {%- include sidebar.html -%}
           </aside>
-          {%- endif -%}
-        </div>
-      </div>
-    </main>
-
-    {%- include footer.html -%}
-    {%- include accessibility.html -%}
-
-  </body>
-
-</html>

@@ -2,83 +2,71 @@
 layout: page
 title: Σχετικά
 permalink: /about/
-sidebar: false
+sidebar: contact
 ---
 
 <style>
 .post-title { display: none; }
-.post-content { text-align: center; }
 .post-content hr { width: 120px; margin: 1.2rem auto; border: none; border-top: 2px solid #dce8f5; }
 
-/* Formspree form - scoped variables */
-.fs-form {
+/* Formspree sidebar form */
+.fs-form--sidebar {
   --color-border-active: #185FA5;
   --color-border-default: #dce8f5;
   --color-primary: #185FA5;
   --color-primary-active: #0C447C;
-  --color-highlight: #E6F1FB;
   --color-text-default: #262626;
   --color-text-muted: #888;
-  max-width: 420px;
-  margin: 0 auto;
-  text-align: left;
   display: grid;
-  row-gap: 1.2rem;
+  row-gap: 0.8rem;
 }
-.fs-field { display: flex; flex-direction: column; row-gap: 0.4rem; }
-.fs-label { color: var(--color-text-default); display: block; font-size: 0.9rem; font-weight: 600; line-height: 1.25rem; }
-.fs-description { color: var(--color-text-muted); display: block; font-size: 0.8rem; line-height: 1.25rem; }
-.fs-button-group { display: flex; flex-direction: row-reverse; }
-.fs-button {
-  background-color: var(--color-primary);
+.fs-form--sidebar .fs-field { display: flex; flex-direction: column; row-gap: 0.3rem; }
+.fs-form--sidebar .fs-label { font-size: 0.78rem; font-weight: 600; color: #0C447C; }
+.fs-form--sidebar .fs-input {
+  appearance: none;
+  border-radius: 9999px;
+  box-shadow: var(--color-border-default) 0 0 0 1px inset;
+  color: var(--color-text-default);
+  font-size: 0.82rem;
+  height: 2.2rem;
+  outline: none;
+  padding: 0 0.75rem;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+.fs-form--sidebar .fs-input:focus-visible { box-shadow: var(--color-border-active) 0 0 0 1.5px inset; }
+.fs-form--sidebar .fs-textarea {
+  appearance: none;
+  border-radius: 0.6rem;
+  box-shadow: var(--color-border-default) 0 0 0 1px inset;
+  color: var(--color-text-default);
+  font-size: 0.82rem;
+  line-height: 1.4rem;
+  outline: none;
+  padding: 0.4rem 0.6rem;
+  resize: vertical;
+  min-height: 80px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+.fs-form--sidebar .fs-textarea:focus-visible { box-shadow: var(--color-border-active) 0 0 0 1.5px inset; }
+.fs-form--sidebar .fs-button-group { display: flex; flex-direction: row-reverse; }
+.fs-form--sidebar .fs-button {
+  background-color: #185FA5;
   border-radius: 9999px;
   color: white;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.82rem;
   font-weight: 600;
-  line-height: 1.5rem;
-  padding: 0.6rem 2rem;
+  padding: 0.45rem 1.2rem;
   border: none;
   transition: background-color 200ms;
 }
-.fs-button:hover { background-color: var(--color-primary-active); }
-.fs-button:focus-visible { background-color: var(--color-primary-active); outline: 4px solid var(--color-highlight); }
-.fs-input {
-  appearance: none;
-  border-radius: 9999px;
-  box-shadow: var(--color-border-default) 0 0 0 1px inset;
-  color: var(--color-text-default);
-  font-size: 0.95rem;
-  height: 2.8rem;
-  line-height: 1.5rem;
-  outline: none;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border: none;
-  width: 100%;
-  box-sizing: border-box;
-  font-family: inherit;
-}
-.fs-input:focus-visible { box-shadow: var(--color-border-active) 0 0 0 1.5px inset; }
-.fs-input::placeholder { color: var(--color-text-muted); }
-.fs-textarea {
-  appearance: none;
-  border-radius: 0.75rem;
-  box-shadow: var(--color-border-default) 0 0 0 1px inset;
-  color: var(--color-text-default);
-  font-size: 0.95rem;
-  line-height: 1.5rem;
-  outline: none;
-  padding: 0.5rem 0.75rem;
-  resize: vertical;
-  min-height: 110px;
-  border: none;
-  width: 100%;
-  box-sizing: border-box;
-  font-family: inherit;
-}
-.fs-textarea:focus-visible { box-shadow: var(--color-border-active) 0 0 0 1.5px inset; }
-.fs-textarea::placeholder { color: var(--color-text-muted); }
+.fs-form--sidebar .fs-button:hover { background-color: #0C447C; }
 </style>
 
 Πρακτικά tips και οδηγίες για το <a href="https://myschool.sch.gr/">myschool</a>.
@@ -95,28 +83,6 @@ sidebar: false
     Τμήμα Προσωπικού ΔΙ.Π.Ε. Αν. Θεσ/κης
   </div>
 </div>
-
----
-
-<form action="https://formspree.io/f/xqenapae" class="fs-form" target="_top" method="POST">
-  <div class="fs-field">
-    <label class="fs-label" for="name">Όνομα</label>
-    <input class="fs-input" id="name" name="name" required />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="email">Email</label>
-    <input class="fs-input" id="email" name="email" type="email" required />
-    <p class="fs-description">Θα χρησιμοποιηθεί για την απάντησή μου.</p>
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="message">Μήνυμα</label>
-    <textarea class="fs-textarea" id="message" name="message" required></textarea>
-    <p class="fs-description">Τι θα θέλατε να συζητήσουμε;</p>
-  </div>
-  <div class="fs-button-group">
-    <button class="fs-button" type="submit">Αποστολή</button>
-  </div>
-</form>
 
 ---
 
