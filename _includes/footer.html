@@ -1,12 +1,13 @@
 <footer class="site-footer">
   <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <p>{{ site.description }}</p>
-      </div>
-      <div class="footer-col footer-col-2" style="white-space: nowrap;">
-        <p>© {{ site.time | date: "%Y" }} {{ site.author }} · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></p>
-      </div>
+    <div class="footer-inner">
+      <span class="footer-left">
+        <strong>{{ site.title | escape }}</strong> &mdash; {{ site.description | escape }}
+      </span>
+      <span class="footer-right">
+        &copy; {{ 'now' | date: "%Y" }} Michalis Katsirntakis &middot;
+        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>
+      </span>
     </div>
   </div>
 </footer>

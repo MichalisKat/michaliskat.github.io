@@ -5,17 +5,17 @@ permalink: /about/
 sidebar: false
 ---
 
-## Για το blog
+<style>.post-title { display: none; } .post-content { text-align: center; }</style>
 
-Αυτό το blog συγκεντρώνει πρακτικά tips και οδηγίες για το [myschool](https://myschool.sch.gr/).
+Πρακτικά tips και οδηγίες για το [myschool](https://myschool.sch.gr/).
 
-Στόχος είναι να υπάρχει ένα **απλό, πρακτικό σημείο αναφοράς** για καθημερινές εργασίες, χωρίς περιττή τεχνική ορολογία.
+Απλό, πρακτικό σημείο αναφοράς χωρίς περιττή τεχνική ορολογία.
 
-## Για τον συγγραφέα
+---
 
-<div style="display:flex;align-items:center;gap:1.2rem;margin-bottom:1rem">
-  <img src="https://users.sch.gr/katsirntakis/mefront.png" alt="Κατσιρντάκης Μιχάλης" style="width:90px;height:90px;border-radius:50%;object-fit:cover;border:3px solid #185FA5;flex-shrink:0">
-  <div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:0.6rem;margin:1.5rem 0">
+  <img src="https://users.sch.gr/katsirntakis/mefront.png" alt="Κατσιρντάκης Μιχάλης" style="width:90px;height:90px;border-radius:50%;object-fit:cover;border:3px solid #185FA5">
+  <div style="text-align:center">
     <strong>Κατσιρντάκης Μιχάλης</strong><br>
     MEng, MSc, ΠΕ Διοικητικού-Οικονομικού<br>
     Τμήμα Προσωπικού ΔΙ.Π.Ε. Αν. Θεσ/κης

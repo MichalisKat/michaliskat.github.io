@@ -1,0 +1,120 @@
+<!-- Accessibility Widget -->
+<div id="a11y-bar">
+  <button id="a11y-toggle" aria-label="Επιλογές προσβασιμότητας" title="Επιλογές προσβασιμότητας">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <path d="M12 8v4l3 3"/>
+      <circle cx="12" cy="7" r="1" fill="currentColor" stroke="none"/>
+      <path d="M9 12h6M12 15l-2 3M12 15l2 3"/>
+    </svg>
+  </button>
+
+  <div id="a11y-panel" role="dialog" aria-label="Ρυθμίσεις προσβασιμότητας" hidden>
+    <div class="a11y-header">
+      <span>Προσβασιμότητα</span>
+      <button id="a11y-close" aria-label="Κλείσιμο">✕</button>
+    </div>
+
+    <div class="a11y-section">
+      <label>Μέγεθος κειμένου</label>
+      <div class="a11y-btns">
+        <button data-action="font-sm" title="Μικρό">A−</button>
+        <button data-action="font-md" title="Κανονικό">A</button>
+        <button data-action="font-lg" title="Μεγάλο">A+</button>
+        <button data-action="font-xl" title="Πολύ μεγάλο">A++</button>
+      </div>
+    </div>
+
+    <div class="a11y-section">
+      <label>Αναγνωσιμότητα</label>
+      <div class="a11y-toggles">
+        <button data-action="toggle-links" class="a11y-opt">🔗 Ανάδειξη συνδέσμων</button>
+        <button data-action="toggle-spacing" class="a11y-opt">↕ Αραίωση γραμμών</button>
+        <button data-action="toggle-contrast" class="a11y-opt">◑ Υψηλή αντίθεση</button>
+        <button data-action="toggle-dyslexia" class="a11y-opt">Αα Δυσλεξία-friendly</button>
+      </div>
+    </div>
+
+    <div class="a11y-section">
+      <button data-action="reset" class="a11y-reset">↺ Επαναφορά</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var PREFS_KEY = 'a11y_prefs';
+
+  var prefs = JSON.parse(localStorage.getItem(PREFS_KEY) || '{}');
+
+  function applyPrefs() {
+    var html = document.documentElement;
+    // font size
+    html.style.fontSize = prefs.fontSize || '';
+    // toggles
+    html.classList.toggle('a11y-links',    !!prefs.links);
+    html.classList.toggle('a11y-spacing',  !!prefs.spacing);
+    html.classList.toggle('a11y-contrast', !!prefs.contrast);
+    html.classList.toggle('a11y-dyslexia', !!prefs.dyslexia);
+    // update button active states
+    document.querySelectorAll('[data-action^="toggle-"]').forEach(function(btn) {
+      var key = btn.dataset.action.replace('toggle-', '');
+      btn.classList.toggle('active', !!prefs[key]);
+    });
+    document.querySelectorAll('[data-action^="font-"]').forEach(function(btn) {
+      btn.classList.remove('active');
+    });
+    if (prefs.fontKey) {
+      var active = document.querySelector('[data-action="' + prefs.fontKey + '"]');
+      if (active) active.classList.add('active');
+    }
+  }
+
+  function save() {
+    localStorage.setItem(PREFS_KEY, JSON.stringify(prefs));
+    applyPrefs();
+  }
+
+  // Apply on load immediately
+  applyPrefs();
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var bar    = document.getElementById('a11y-bar');
+    var toggle = document.getElementById('a11y-toggle');
+    var panel  = document.getElementById('a11y-panel');
+    var close  = document.getElementById('a11y-close');
+
+    toggle.addEventListener('click', function() {
+      var hidden = panel.hidden;
+      panel.hidden = !hidden;
+      toggle.setAttribute('aria-expanded', String(hidden));
+    });
+    close.addEventListener('click', function() {
+      panel.hidden = true;
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+
+    bar.addEventListener('click', function(e) {
+      var btn = e.target.closest('[data-action]');
+      if (!btn) return;
+      var action = btn.dataset.action;
+
+      var fontSizes = { 'font-sm': '90%', 'font-md': '', 'font-lg': '115%', 'font-xl': '130%' };
+      if (fontSizes.hasOwnProperty(action)) {
+        prefs.fontSize = fontSizes[action];
+        prefs.fontKey  = action;
+        save(); return;
+      }
+      if (action === 'reset') {
+        prefs = {};
+        save(); return;
+      }
+      var key = action.replace('toggle-', '');
+      prefs[key] = !prefs[key];
+      save();
+    });
+
+    applyPrefs();
+  });
+})();
+</script>
