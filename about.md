@@ -2,7 +2,7 @@
 layout: page
 title: Σχετικά
 permalink: /about/
-sidebar: contact
+sidebar: false
 ---
 
 <style>
