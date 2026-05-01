@@ -28,20 +28,12 @@ sidebar: false
 
 ---
 
-<div style="text-align:center;margin-top:2rem">
-  <a href="https://info.flagcounter.com/57I5">
-    <img src="https://s01.flagcounter.com/map/57I5/size_t/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter">
-  </a>
-</div>
-
-<!-- StatCounter -->
-<script type="text/javascript">
-var sc_project=13210795;
-var sc_invisible=0;
-var sc_security="0e82d870";
-</script>
-<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript>
-  <div class="statcounter">
-    <a href="https://statcounter.com/" target="_blank">
-      <img class="statcounter" src="https://c.statcounter.com/13210795/0/0e82d
+<div style="max-width:420px;margin:1.5rem auto 2rem;text-align:left">
+  <form action="https://formspree.io/f/xqenapae" method="POST">
+    <div style="margin-bottom:0.7rem">
+      <input type="email" name="email" placeholder="Το email σας" required
+        style="width:100%;padding:0.5rem 0.75rem;border:1px solid #dce8f5;border-radius:7px;font-size:0.9rem;box-sizing:border-box">
+    </div>
+    <div style="margin-bottom:0.7rem">
+      <textarea name="message" placeholder="Το μήνυμά σας" required rows="4"
+        style="width:100%;padding:0.5rem 0.75rem;border:1px solid #dce8f5;border-radius:7px;font-size:0.9rem;box-sizing:border-box
