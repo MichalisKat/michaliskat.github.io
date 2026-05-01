@@ -24,8 +24,20 @@ layout: default
     {{ content }}
   </div>
 
+  <div class="post-reactions">
+    <script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_5c0a6b01baf05ad8c549fbf1688fcb"></script>
+    {%- assign post_id = page.url | remove: "/" | replace: "/", "-" -%}
+    <div
+      data-lyket-type="clap"
+      data-lyket-namespace="blog"
+      data-lyket-id="{{ post_id }}"
+      data-lyket-color-text="#185FA5"
+      data-lyket-color-primary="#185FA5">
+    </div>
+  </div>
+
   <div class="post-back-footer">
-    <a class="post-back" href="{{ '/' | relative_url }}">&#8592; &#917;&#960;&#953;&#963;&#964;&#961;&#959;&#966;&#942; &#963;&#964;&#951;&#977; &#945;&#961;&#967;&#953;&#954;&#942;</a>
+    <a class="post-back" href="{{ '/' | relative_url }}">&#8592; &#917;&#960;&#953;&#963;&#964;&#961;&#959;&#966;&#942; &#963;&#964;&#951;&#957; &#945;&#961;&#967;&#953;&#954;&#942;</a>
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
