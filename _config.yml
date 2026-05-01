@@ -1,6 +1,8 @@
-title: MySchool Tips
+title: "MySchool Tips — Οδηγίες & Tips για το myschool.sch.gr"
 description: >-
-  Πρακτικές οδηγίες και tips για το myschool.
+  Πρακτικές οδηγίες, tips και αυτοματισμοί για το myschool — το σύστημα
+  διαχείρισης εκπαιδευτικών του Υπουργείου Παιδείας. Για σχολικές μονάδες
+  και Διευθύνσεις Εκπαίδευσης.
 baseurl: ""
 url: "https://michaliskat.github.io"
 lang: el
@@ -14,22 +16,6 @@ minima:
 author: Michalis Katsirntakis
 
 # Open Graph
-logo: /assets/images/og-image.png
+logo: /assets/favicon/icon-192.png
 social:
   name: Michalis Katsirntakis
-
-# Build settings
-markdown: kramdown
-highlighter: rouge
-permalink: /:year/:month/:day/:title/
-
-# Εξαιρέσεις από το build
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - node_modules
-  - vendor
-  - _site
-
-# Μενού πλοήγησης (μόνο Σχετικά)
