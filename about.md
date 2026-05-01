@@ -5,7 +5,11 @@ permalink: /about/
 sidebar: false
 ---
 
-<style>.post-title { display: none; } .post-content { text-align: center; }</style>
+<style>
+.post-title { display: none; }
+.post-content { text-align: center; }
+.post-content hr { width: 120px; margin: 1.2rem auto; border: none; border-top: 2px solid #dce8f5; }
+</style>
 
 Πρακτικά tips και οδηγίες για το [myschool](https://myschool.sch.gr/).
 
@@ -40,7 +44,4 @@ var sc_security="0e82d870";
 <noscript>
   <div class="statcounter">
     <a href="https://statcounter.com/" target="_blank">
-      <img class="statcounter" src="https://c.statcounter.com/13210795/0/0e82d870/0/" alt="Web Analytics" referrerpolicy="no-referrer-when-downgrade">
-    </a>
-  </div>
-</noscript>
+      <img class="statcounter" src="https://c.statcounter.com/13210795/0/0e82d
