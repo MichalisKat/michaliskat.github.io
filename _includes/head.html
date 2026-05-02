@@ -13,4 +13,55 @@
 
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   {%- feed_meta -%}
+
+  <!-- PWA: Service Worker -->
+  <style>
+    #pwa-update-banner {
+      display: none;
+      position: fixed;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0C447C;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      z-index: 9999;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      gap: 0.8rem;
+      align-items: center;
+      white-space: nowrap;
+    }
+    #pwa-update-banner.show { display: flex; }
+    #pwa-update-btn {
+      background: white;
+      color: #0C447C;
+      border: none;
+      border-radius: 9999px;
+      padding: 0.3rem 0.9rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  </style>
+  <div id="pwa-update-banner">
+    🔄 Υπάρχει νέα έκδοση
+    <button id="pwa-update-btn" onclick="location.reload()">Ανανέωση</button>
+  </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').then(reg => {
+        reg.addEventListener('updatefound', () => {
+          const newSW = reg.installing;
+          newSW.addEventListener('statechange', () => {
+            if (newSW.state === 'installed' && navigator.serviceWorker.controller) {
+              document.getElementById('pwa-update-banner').classList.add('show');
+            }
+          });
+        });
+      });
+    }
+  </script>
 </head>

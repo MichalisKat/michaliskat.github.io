@@ -1,6 +1,12 @@
 {
   "name": "MySchool Tips",
-  "short_name": "MySchool",
+  "short_name": "MySchool Tips",
+  "description": "Πρακτικές οδηγίες και tips για το myschool.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#185FA5",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "/assets/favicon/icon-192.png",
@@ -10,10 +16,8 @@
     {
       "src": "/assets/favicon/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "browser"
+  ]
 }
