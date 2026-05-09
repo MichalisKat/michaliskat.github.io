@@ -615,4 +615,81 @@ blockquote p { margin: 0; }
   /* Post list */
   .post-list h3 a { color: #60a5fa !important; }
   .post-meta { color: #64748b !important; }
+
+  /* Sidebar widgets — links & announce */
+  .sb-links__list a { color: #60a5fa !important; }
+  .sb-links__list a:hover { color: #93c5fd !important; }
+  .sb-announce__text { color: #94a3b8 !important; }
+  .sb-announce__link { color: #60a5fa !important; }
+}
+
+/* =============================================
+   Sidebar widget — Χρήσιμοι Σύνδεσμοι
+   ============================================= */
+.sb-widget-title {
+  font-size: 0.75rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sb-links__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    color: #185FA5;
+    text-decoration: none;
+    padding: 4px 6px;
+    border-radius: 6px;
+    transition: background .12s;
+
+    &:hover { background: #e6f1fb; color: #0C447C; }
+    &:visited { color: #185FA5; }
+  }
+}
+
+/* =============================================
+   Sidebar widget — Ανακοινώσεις
+   ============================================= */
+.sb-announce__badge {
+  font-size: 0.65rem;
+  color: #fff;
+  background: #e11d48;
+  border-radius: 20px;
+  padding: 1px 6px;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
+
+.sb-announce__text {
+  font-size: 0.82rem;
+  color: #444;
+  line-height: 1.55;
+  margin: 0 0 0.6rem;
+}
+
+.sb-announce__link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #185FA5;
+  text-decoration: none;
+
+  &:hover { text-decoration: underline; }
+  &:visited { color: #185FA5; }
 }
